@@ -31,7 +31,7 @@ A Python-based tool designed to assist with a variety of daily games using **Sel
 - **[Genshindle/Honkai/ZZZdle](https://us.genshindle.com/)**  
   A guessing game based on characters from Genshin Impact, Honkai Impact, and Zenless Zone Zero.
 - **[Wuwadle](https://us.wuwadle.com/)**  
-  A word-guessing game inspired by Wordle.
+  A guessing game based on characters from Wuthering Waves.
 - **[Spellcheckgame](https://spellcheckgame.com/)**  
   A game that tests your spelling skills.
 - **[Minecraftdle](https://minecraftle.org/)**  
