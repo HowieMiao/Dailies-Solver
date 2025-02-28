@@ -1,0 +1,3165 @@
+[1740708760.600][INFO]: Starting ChromeDriver 133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912}) on port 53371
+[1740708760.600][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1740708760.604][INFO]: ChromeDriver was started successfully on port 53371
+[1740708761.099][INFO]: [2b315ad5176ef49845d2bd688f61fb85] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--disable-metrics", "--disable-metrics-reporting", "--log-level=3", "--disable-dev-shm-usage", "--disable-blink-features=AutomationControlled" ],
+            "detach": true,
+            "excludeSwitches": [ "enable-logging" ],
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1740708761.099][INFO]: Browser search. Trying... C:\Users\howie\.wdm\drivers\chromedriver\win64\133.0.6943.141\chromedriver-win32\chrome.exe
+[1740708761.099][INFO]: Browser search. Trying... C:\Users\howie\.wdm\drivers\chromedriver\win64\133.0.6943.141\chromedriver-win32\chrome.exe
+[1740708761.099][INFO]: Browser search. Trying... C:\Users\howie\.wdm\drivers\chromedriver\win64\133.0.6943.141\chromedriver-win32\chromium.exe
+[1740708761.101][INFO]: Browser search. Trying... C:\Users\howie\AppData\Local\Google\Chrome\Application\chrome.exe
+[1740708761.101][INFO]: Browser search. Trying... C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[1740708761.101][INFO]: Browser search. Trying... C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[1740708761.101][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1740708761.101][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1740708761.102][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1740708761.102][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1740708761.103][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1740708761.103][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1740708761.104][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-blink-features=AutomationControlled --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-metrics --disable-metrics-reporting --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --log-level=3 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\howie\AppData\Local\Temp\scoped_dir26180_169958882" data:,
+[1740708761.321][DEBUG]: DevTools HTTP Request: http://localhost:53374/json/version
+[1740708761.627][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/133.0.6943.142",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+   "V8-Version": "13.3.415.23",
+   "WebKit-Version": "537.36 (@f217c2438a8e1f4b9e730de378ce20f754b2c3d0)",
+   "webSocketDebuggerUrl": "ws://localhost:53374/devtools/browser/7788eeba-6408-4413-9d9c-2aa5034a9dd8"
+}
+
+[1740708761.627][DEBUG]: DevTools HTTP Request: http://localhost:53374/json/list
+[1740708761.628][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:53374/devtools/page/967F37347BE01AE829489019FDAC0850",
+   "id": "967F37347BE01AE829489019FDAC0850",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:53374/devtools/page/967F37347BE01AE829489019FDAC0850"
+} ]
+
+[1740708761.631][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1740708761.632][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+   "filter": [ {
+      "exclude": true,
+      "type": "browser"
+   }, {
+      "exclude": true,
+      "type": "page"
+   }, {
+      "exclude": false
+   } ]
+}
+[1740708761.632][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "BB0BF0FBE163A0E2BAAB455D88D8290A",
+      "title": "data:,",
+      "type": "tab",
+      "url": "data:,"
+   } ]
+}
+[1740708761.632][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "BB0BF0FBE163A0E2BAAB455D88D8290A"
+}
+[1740708761.632][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "0D6C97D80E3FADBF0439C0F2D7497684",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "BB0BF0FBE163A0E2BAAB455D88D8290A",
+      "title": "data:,",
+      "type": "tab",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1740708761.632][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "0D6C97D80E3FADBF0439C0F2D7497684"
+}
+[1740708761.632][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=3) (session_id=0D6C97D80E3FADBF0439C0F2D7497684) BB0BF0FBE163A0E2BAAB455D88D8290A {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=0D6C97D80E3FADBF0439C0F2D7497684) BB0BF0FBE163A0E2BAAB455D88D8290A {
+   "sessionId": "6D218FCDDE07C50EA74C78B1F6B7DA7A",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "967F37347BE01AE829489019FDAC0850",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Command: Page.enable (id=4) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=5) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=6) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Command: Log.enable (id=7) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=8) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=3) (session_id=0D6C97D80E3FADBF0439C0F2D7497684) BB0BF0FBE163A0E2BAAB455D88D8290A {
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Response: Page.enable (id=4) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=5) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "identifier": "1"
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=6) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Response: Log.enable (id=7) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=8) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "context": {
+      "auxData": {
+         "frameId": "967F37347BE01AE829489019FDAC0850",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "2708853569059000715.-2727291288368797679"
+   }
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.633][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=10) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.634][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=10) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.634][INFO]: [2b315ad5176ef49845d2bd688f61fb85] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "133.0.6943.142",
+      "chrome": {
+         "chromedriverVersion": "133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912})",
+         "userDataDir": "C:\\Users\\howie\\AppData\\Local\\Temp\\scoped_dir26180_169958882"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:53374"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "2b315ad5176ef49845d2bd688f61fb85"
+}
+[1740708761.634][INFO]: [2b315ad5176ef49845d2bd688f61fb85] COMMAND Navigate {
+   "url": "https://www.nytimes.com/games/wordle/index.html"
+}
+[1740708761.634][INFO]: Waiting for pending navigations...
+[1740708761.634][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708761.635][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708761.635][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=12) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "document",
+   "objectGroup": "58d85cb4-7b5e-4d2f-bc63-daba9566e9f0"
+}
+[1740708761.635][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=12) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-3988464755763639194.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1740708761.635][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=13) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "objectId": "-3988464755763639194.1.1"
+}
+[1740708761.635][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=13) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1740708761.635][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=14) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "objectGroup": "58d85cb4-7b5e-4d2f-bc63-daba9566e9f0"
+}
+[1740708761.635][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=15) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "2708853569059000715.-2727291288368797679"
+}
+[1740708761.635][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=14) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.635][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=15) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1740708761.635][INFO]: Done waiting for pending navigations. Status: ok
+[1740708761.635][DEBUG]: DevTools WebSocket Command: Page.navigate (id=16) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "url": "https://www.nytimes.com/games/wordle/index.html"
+}
+[1740708761.639][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "967F37347BE01AE829489019FDAC0850"
+}
+[1740708761.724][DEBUG]: DevTools WebSocket Response: Page.navigate (id=16) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "967F37347BE01AE829489019FDAC0850",
+   "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8"
+}
+[1740708761.724][INFO]: Waiting for pending navigations...
+[1740708761.724][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708761.724][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.725][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.725][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "nytimes.com",
+      "gatedAPIFeatures": [  ],
+      "id": "967F37347BE01AE829489019FDAC0850",
+      "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.nytimes.com",
+      "url": "https://www.nytimes.com/games/wordle/index.html"
+   },
+   "type": "Navigation"
+}
+[1740708761.733][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "context": {
+      "auxData": {
+         "frameId": "967F37347BE01AE829489019FDAC0850",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.nytimes.com",
+      "uniqueId": "410687097939882602.-7943819259447678012"
+   }
+}
+[1740708761.736][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708761.935][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "timestamp": 26273.750175
+}
+[1740708761.936][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708761.937][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708761.953][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708761.996][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "C6E38641225E0E4A292D192BDE461B5F",
+   "parentFrameId": "967F37347BE01AE829489019FDAC0850",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 11479,
+         "functionName": "P",
+         "lineNumber": 11,
+         "scriptId": "50",
+         "url": "https://www.nytimes.com/ads/prebid9.26.0.js"
+      }, {
+         "columnNumber": 103133,
+         "functionName": "x.processQueue",
+         "lineNumber": 11,
+         "scriptId": "50",
+         "url": "https://www.nytimes.com/ads/prebid9.26.0.js"
+      }, {
+         "columnNumber": 10,
+         "functionName": "",
+         "lineNumber": 48,
+         "scriptId": "50",
+         "url": "https://www.nytimes.com/ads/prebid9.26.0.js"
+      } ]
+   }
+}
+[1740708761.996][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708761.996][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "disposition": "currentTab",
+   "frameId": "C6E38641225E0E4A292D192BDE461B5F",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1740708761.996][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "C6E38641225E0E4A292D192BDE461B5F",
+      "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+      "mimeType": "text/html",
+      "name": "__pb_locator__",
+      "parentId": "967F37347BE01AE829489019FDAC0850",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1740708761.996][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "C6E38641225E0E4A292D192BDE461B5F"
+}
+[1740708761.998][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "context": {
+      "auxData": {
+         "frameId": "C6E38641225E0E4A292D192BDE461B5F",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.nytimes.com",
+      "uniqueId": "269661645109087735.-7729503456995361499"
+   }
+}
+[1740708761.998][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "C6E38641225E0E4A292D192BDE461B5F"
+}
+[1740708762.033][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708762.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "26724.123",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.740708762032931e+12,
+      "url": "https://www.nytimes.com/svc/games/settings/wordleV2"
+   }
+}
+[1740708762.034][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708762.037][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+   "parentFrameId": "967F37347BE01AE829489019FDAC0850",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 4514,
+         "functionName": "n",
+         "lineNumber": 0,
+         "scriptId": "51",
+         "url": "https://rumcdn.geoedge.be/b3960cc6-bfd2-4adc-910c-6e917e8a6a0e/grumi-ip.js"
+      }, {
+         "columnNumber": 4990,
+         "functionName": "e",
+         "lineNumber": 0,
+         "scriptId": "51",
+         "url": "https://rumcdn.geoedge.be/b3960cc6-bfd2-4adc-910c-6e917e8a6a0e/grumi-ip.js"
+      }, {
+         "columnNumber": 5406,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "51",
+         "url": "https://rumcdn.geoedge.be/b3960cc6-bfd2-4adc-910c-6e917e8a6a0e/grumi-ip.js"
+      }, {
+         "columnNumber": 16388,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "51",
+         "url": "https://rumcdn.geoedge.be/b3960cc6-bfd2-4adc-910c-6e917e8a6a0e/grumi-ip.js"
+      } ]
+   }
+}
+[1740708762.037][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "disposition": "currentTab",
+   "frameId": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1740708762.037][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+      "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "967F37347BE01AE829489019FDAC0850",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1740708762.037][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6"
+}
+[1740708762.038][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "context": {
+      "auxData": {
+         "frameId": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://www.nytimes.com",
+      "uniqueId": "1414912739381838361.-3413924440793348385"
+   }
+}
+[1740708762.038][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6"
+}
+[1740708762.040][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "2F050E7FE4FC8B5F9524D718D35B64DA",
+   "parentFrameId": "967F37347BE01AE829489019FDAC0850",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 11499,
+         "functionName": "e",
+         "lineNumber": 0,
+         "scriptId": "51",
+         "url": "https://rumcdn.geoedge.be/b3960cc6-bfd2-4adc-910c-6e917e8a6a0e/grumi-ip.js"
+      }, {
+         "columnNumber": 430,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "53",
+         "url": "https://launchpad-wrapper.privacymanager.io/9fab0bf6-df63-42ca-acc5-caf4de668f40/launchpad-liveramp.js"
+      }, {
+         "columnNumber": 466,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "53",
+         "url": "https://launchpad-wrapper.privacymanager.io/9fab0bf6-df63-42ca-acc5-caf4de668f40/launchpad-liveramp.js"
+      }, {
+         "columnNumber": 1038,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "53",
+         "url": "https://launchpad-wrapper.privacymanager.io/9fab0bf6-df63-42ca-acc5-caf4de668f40/launchpad-liveramp.js"
+      } ]
+   }
+}
+[1740708762.041][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "disposition": "currentTab",
+   "frameId": "2F050E7FE4FC8B5F9524D718D35B64DA",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1740708762.041][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+      "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+      "mimeType": "text/html",
+      "name": "__launchpadLocator",
+      "parentId": "967F37347BE01AE829489019FDAC0850",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1740708762.041][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "2F050E7FE4FC8B5F9524D718D35B64DA"
+}
+[1740708762.042][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "context": {
+      "auxData": {
+         "frameId": "2F050E7FE4FC8B5F9524D718D35B64DA",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://www.nytimes.com",
+      "uniqueId": "-2953914660551647206.6906570207837847309"
+   }
+}
+[1740708762.042][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "2F050E7FE4FC8B5F9524D718D35B64DA"
+}
+[1740708762.141][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708762.182][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "26724.136",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.74070876218165e+12,
+      "url": "https://www.nytimes.com/svc/games/state/wordleV2/latests?puzzle_ids=1142"
+   }
+}
+[1740708762.182][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708762.193][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708762.193][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708762.387][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "timestamp": 26274.201503
+}
+[1740708762.387][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "410687097939882602.-7943819259447678012"
+}
+[1740708762.387][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "967F37347BE01AE829489019FDAC0850"
+}
+[1740708762.392][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1740708762.392][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=23) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708762.392][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=23) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708762.392][INFO]: Done waiting for pending navigations. Status: ok
+[1740708762.392][INFO]: [2b315ad5176ef49845d2bd688f61fb85] RESPONSE Navigate
+[1740708762.396][INFO]: [2b315ad5176ef49845d2bd688f61fb85] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return Object.keys(localStorage);"
+}
+[1740708762.396][INFO]: Waiting for pending navigations...
+[1740708762.396][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708762.397][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708762.397][INFO]: Done waiting for pending navigations. Status: ok
+[1740708762.397][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=25) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708762.397][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=25) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708762.397][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=26) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708762.398][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=26) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708762.398][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=27) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "410687097939882602.-7943819259447678012"
+}
+[1740708762.400][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=27) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[\"mktg\",\"nyt-wordle-darkmode\",\"aps:3030:sessionMarker/marker\",\"als_test_clientside\",\"pz-version\",\"bt\",\"apstagCxMEnabled\",\"aps:3030:deviceSignal/sua\",\"sub\"]}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "868727329833311583.1.1",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1740708762.400][INFO]: Waiting for pending navigations...
+[1740708762.400][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=28) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708762.401][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=28) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708762.401][INFO]: Done waiting for pending navigations. Status: ok
+[1740708762.401][INFO]: [2b315ad5176ef49845d2bd688f61fb85] RESPONSE ExecuteScript [ "mktg", "nyt-wordle-darkmode", "aps:3030:sessionMarker/marker", "als_test_clientside", "pz-version", "bt", "apstagCxMEnabled", "aps:3030:deviceSignal/sua", "sub" ]
+[1740708764.403][INFO]: [2b315ad5176ef49845d2bd688f61fb85] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return Object.keys(localStorage);"
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "0829A1F8B0B89A73B85857F382B8B9C9",
+   "parentFrameId": "967F37347BE01AE829489019FDAC0850",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 11499,
+         "functionName": "e",
+         "lineNumber": 0,
+         "scriptId": "51",
+         "url": "https://rumcdn.geoedge.be/b3960cc6-bfd2-4adc-910c-6e917e8a6a0e/grumi-ip.js"
+      }, {
+         "columnNumber": 190296,
+         "functionName": "n",
+         "lineNumber": 2,
+         "scriptId": "52",
+         "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      }, {
+         "columnNumber": 190491,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "52",
+         "url": "https://c.amazon-adsystem.com/aax2/apstag.js"
+      }, {
+         "columnNumber": 286375,
+         "functionName": "r",
+         "lineNumber": 1,
+         "scriptId": "30",
+         "url": "https://www.nytimes.com/games-assets/v2/5786.089e5c1f92204b8e71b5.js"
+      } ]
+   }
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "disposition": "currentTab",
+   "frameId": "0829A1F8B0B89A73B85857F382B8B9C9",
+   "reason": "initialFrameNavigation",
+   "url": "https://s.amazon-adsystem.com/iu3?cm3ppd=1&d=dtb-pub&csif=t&dl=n-index_pm-db5_rbd_n-vmg_n-MediaNet_ox-db5_an-db5_3lift"
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "0829A1F8B0B89A73B85857F382B8B9C9"
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "sessionId": "B27E56267A6457317EA0119F57F3B3F2",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "0829A1F8B0B89A73B85857F382B8B9C9",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Command: Page.enable (id=29) (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=30) (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=31) (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=32) (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "0829A1F8B0B89A73B85857F382B8B9C9",
+      "title": "https://s.amazon-adsystem.com/iu3?cm3ppd=1&d=dtb-pub&csif=t&dl=n-index_pm-db5_rbd_n-vmg_n-MediaNet_ox-db5_an-db5_3lift&dcc=t",
+      "type": "iframe",
+      "url": "https://s.amazon-adsystem.com/iu3?cm3ppd=1&d=dtb-pub&csif=t&dl=n-index_pm-db5_rbd_n-vmg_n-MediaNet_ox-db5_an-db5_3lift&dcc=t"
+   }
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "0829A1F8B0B89A73B85857F382B8B9C9",
+   "reason": "swap"
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "BD8EFD303F62FB7DBE94209DEEF80BD4",
+   "parentFrameId": "967F37347BE01AE829489019FDAC0850",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 441,
+         "functionName": "rc",
+         "lineNumber": 106,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 76,
+         "functionName": "vl",
+         "lineNumber": 276,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 368,
+         "functionName": "",
+         "lineNumber": 554,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 42,
+         "functionName": "y",
+         "lineNumber": 558,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 118,
+         "functionName": "MG",
+         "lineNumber": 558,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 389,
+         "functionName": "NG",
+         "lineNumber": 552,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 300,
+         "functionName": "e",
+         "lineNumber": 563,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 106,
+         "functionName": "",
+         "lineNumber": 564,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 136,
+         "functionName": "",
+         "lineNumber": 298,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 431,
+         "functionName": "lm.notifyListeners",
+         "lineNumber": 403,
+         "scriptId": "55",
+         "url": "https://www.googletagmanager.com/gtm.js?id=GTM-P528B3&gtm_auth=tfAzqo1rYDLgYhmTnSjPqw&gtm_preview=env-130&gtm_cookies_win=x"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 398,
+         "scriptId": "55",
+         "url": "https://www.googletagmanager.com/gtm.js?id=GTM-P528B3&gtm_auth=tfAzqo1rYDLgYhmTnSjPqw&gtm_preview=env-130&gtm_cookies_win=x"
+      }, {
+         "columnNumber": 286375,
+         "functionName": "r",
+         "lineNumber": 1,
+         "scriptId": "30",
+         "url": "https://www.nytimes.com/games-assets/v2/5786.089e5c1f92204b8e71b5.js"
+      } ]
+   }
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "disposition": "currentTab",
+   "frameId": "BD8EFD303F62FB7DBE94209DEEF80BD4",
+   "reason": "initialFrameNavigation",
+   "url": "https://5290727.fls.doubleclick.net/activityi;src=5290727;type=allpa0;cat=nyti-0;ord=1;num=273380098976;npa=0;auiddc=1142817357.1740708763;u17=https%3A%2F%2Fwww.nytimes.com%2Fgames%2Fwordle%2Findex..."
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "BD8EFD303F62FB7DBE94209DEEF80BD4"
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "019FAA1083CF111391DB0DCD5A567970",
+   "parentFrameId": "967F37347BE01AE829489019FDAC0850",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 441,
+         "functionName": "rc",
+         "lineNumber": 106,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 136,
+         "functionName": "cl",
+         "lineNumber": 273,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 259,
+         "functionName": "xl",
+         "lineNumber": 276,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 287,
+         "functionName": "",
+         "lineNumber": 555,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 42,
+         "functionName": "y",
+         "lineNumber": 558,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 118,
+         "functionName": "MG",
+         "lineNumber": 558,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 389,
+         "functionName": "NG",
+         "lineNumber": 552,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 300,
+         "functionName": "e",
+         "lineNumber": 563,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 106,
+         "functionName": "",
+         "lineNumber": 564,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 136,
+         "functionName": "",
+         "lineNumber": 298,
+         "scriptId": "134",
+         "url": "https://www.googletagmanager.com/gtag/destination?id=DC-5290727&l=dataLayer&cx=c&gtm=45He52q0v72703797za200&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~1..."
+      }, {
+         "columnNumber": 431,
+         "functionName": "lm.notifyListeners",
+         "lineNumber": 403,
+         "scriptId": "55",
+         "url": "https://www.googletagmanager.com/gtm.js?id=GTM-P528B3&gtm_auth=tfAzqo1rYDLgYhmTnSjPqw&gtm_preview=env-130&gtm_cookies_win=x"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 398,
+         "scriptId": "55",
+         "url": "https://www.googletagmanager.com/gtm.js?id=GTM-P528B3&gtm_auth=tfAzqo1rYDLgYhmTnSjPqw&gtm_preview=env-130&gtm_cookies_win=x"
+      }, {
+         "columnNumber": 286375,
+         "functionName": "r",
+         "lineNumber": 1,
+         "scriptId": "30",
+         "url": "https://www.nytimes.com/games-assets/v2/5786.089e5c1f92204b8e71b5.js"
+      } ]
+   }
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "disposition": "currentTab",
+   "frameId": "019FAA1083CF111391DB0DCD5A567970",
+   "reason": "initialFrameNavigation",
+   "url": "https://td.doubleclick.net/td/fls/rul/activityi;fledge=1;src=5290727;type=allpa0;cat=nyti-0;ord=1;num=273380098976;npa=0;auiddc=1142817357.1740708763;u17=https%3A%2F%2Fwww.nytimes.com%2Fgames%2Fwor..."
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "019FAA1083CF111391DB0DCD5A567970"
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "sessionId": "C15623814ECCDE49D171DC72207311F3",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "019FAA1083CF111391DB0DCD5A567970",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Command: Page.enable (id=33) (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=34) (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.403][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=35) (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=36) (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "019FAA1083CF111391DB0DCD5A567970",
+      "title": "https://td.doubleclick.net/td/fls/rul/activityi;fledge=1;src=5290727;type=allpa0;cat=nyti-0;ord=1;num=273380098976;npa=0;auiddc=1142817357.1740708763;u17=https%3A%2F%2Fwww.nytimes.com%2Fgames%2Fwor...",
+      "type": "iframe",
+      "url": "https://td.doubleclick.net/td/fls/rul/activityi;fledge=1;src=5290727;type=allpa0;cat=nyti-0;ord=1;num=273380098976;npa=0;auiddc=1142817357.1740708763;u17=https%3A%2F%2Fwww.nytimes.com%2Fgames%2Fwor..."
+   }
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "019FAA1083CF111391DB0DCD5A567970",
+   "reason": "swap"
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "sessionId": "B787C8931530DF0BEAE0E29BDB2EB7D4",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "BD8EFD303F62FB7DBE94209DEEF80BD4",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Page.enable (id=37) (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=38) (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=39) (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=40) (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "BD8EFD303F62FB7DBE94209DEEF80BD4",
+      "title": "https://5290727.fls.doubleclick.net/activityi;dc_pre=CKSn7Lal5YsDFQNzCQkdqhgHgw;src=5290727;type=allpa0;cat=nyti-0;ord=1;num=273380098976;npa=0;auiddc=1142817357.1740708763;u17=https%3A%2F%2Fwww.ny...",
+      "type": "iframe",
+      "url": "https://5290727.fls.doubleclick.net/activityi;dc_pre=CKSn7Lal5YsDFQNzCQkdqhgHgw;src=5290727;type=allpa0;cat=nyti-0;ord=1;num=273380098976;npa=0;auiddc=1142817357.1740708763;u17=https%3A%2F%2Fwww.ny..."
+   }
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameId": "BD8EFD303F62FB7DBE94209DEEF80BD4",
+   "reason": "swap"
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "sessionId": "300E273360E66C511E0B1D940F962706",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "13FA9E38C5604B6EAE3A753E93992D69",
+      "title": "https://ssum-sec.casalemedia.com/usermatch?cb=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dindex.com%26id%3D%24UID&s=192259&C=1",
+      "type": "iframe",
+      "url": "https://ssum-sec.casalemedia.com/usermatch?cb=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dindex.com%26id%3D%24UID&s=192259&C=1"
+   },
+   "waitingForDebugger": false
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Page.enable (id=41) (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=42) (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=43) (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=44) (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "sessionId": "7093A28E8ED20FB47E46A4AE685C21CF",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "94CA6C45C6A5D1149AC703BEBE8A34C6",
+      "title": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D",
+      "type": "iframe",
+      "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D"
+   },
+   "waitingForDebugger": false
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Page.enable (id=45) (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=46) (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=47) (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.404][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=48) (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "sessionId": "0F03C40FD741D52DB22596E49E39174E",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "B81E1B2F22A3853C4D39F311AE42E315",
+      "title": "https://u.openx.net/w/1.0/cm?cc=1&id=e818ca1e-0c23-caa8-0dd3-096b0ada08b7&ph=2d1251ae-7f3a-47cf-bd2a-2f288854a0ba&plm=5&r=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dopenx.com%26id%3D%7BOPENX...",
+      "type": "iframe",
+      "url": "https://u.openx.net/w/1.0/cm?cc=1&id=e818ca1e-0c23-caa8-0dd3-096b0ada08b7&ph=2d1251ae-7f3a-47cf-bd2a-2f288854a0ba&plm=5&r=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dopenx.com%26id%3D%7BOPENX..."
+   },
+   "waitingForDebugger": false
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Page.enable (id=49) (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=50) (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=51) (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=52) (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Page.enable (id=29) (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=30) (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "identifier": "1"
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=31) (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=32) (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Page.enable (id=33) (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=34) (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+   "identifier": "1"
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=35) (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=36) (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Page.enable (id=37) (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=38) (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+   "identifier": "1"
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=39) (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=40) (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Page.enable (id=41) (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=42) (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+   "identifier": "1"
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=43) (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=44) (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Page.enable (id=45) (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=46) (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "identifier": "1"
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "sessionId": "4141713AB8AADF9BA43DFA5A0A35FE54",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "61B115F9FD81AFD931207CE7F0E8C6B2",
+      "title": "https://c1.adform.net/serving/cookie/match?CC=1&party=14&cid=334F6A78-1130-4BC1-94E1-11AA84CE98F8&gdpr=0&gdpr_consent=",
+      "type": "iframe",
+      "url": "https://c1.adform.net/serving/cookie/match?CC=1&party=14&cid=334F6A78-1130-4BC1-94E1-11AA84CE98F8&gdpr=0&gdpr_consent="
+   },
+   "waitingForDebugger": false
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Page.enable (id=53) (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=54) (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=55) (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=56) (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "sessionId": "477D31BB7C7F127088649FF92E56611F",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "A5A3E9576BA770F557E0F90283CB2D38",
+      "title": "https://s.amazon-adsystem.com/ecm3?ex=pubmatic.com&id=334F6A78-1130-4BC1-94E1-11AA84CE98F8",
+      "type": "iframe",
+      "url": "https://s.amazon-adsystem.com/ecm3?ex=pubmatic.com&id=334F6A78-1130-4BC1-94E1-11AA84CE98F8"
+   },
+   "waitingForDebugger": false
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Page.enable (id=57) (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=58) (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=59) (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708764.405][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=60) (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=47) (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=48) (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Page.enable (id=49) (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=50) (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+   "identifier": "1"
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=51) (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=52) (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Page.enable (id=53) (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=54) (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+   "identifier": "1"
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=55) (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=56) (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Page.enable (id=57) (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=58) (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+   "identifier": "1"
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=59) (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=60) (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=61) (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+   "context": {
+      "auxData": {
+         "frameId": "A5A3E9576BA770F557E0F90283CB2D38",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 6,
+      "name": "",
+      "origin": "https://s.amazon-adsystem.com",
+      "uniqueId": "1013367673041090177.-2451608243070829757"
+   }
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=61) (session_id=477D31BB7C7F127088649FF92E56611F) 477D31BB7C7F127088649FF92E56611F {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=62) (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+   "context": {
+      "auxData": {
+         "frameId": "61B115F9FD81AFD931207CE7F0E8C6B2",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://c1.adform.net",
+      "uniqueId": "-3777541288316353447.3232519631097546847"
+   }
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=62) (session_id=4141713AB8AADF9BA43DFA5A0A35FE54) 4141713AB8AADF9BA43DFA5A0A35FE54 {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=63) (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+   "context": {
+      "auxData": {
+         "frameId": "B81E1B2F22A3853C4D39F311AE42E315",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://u.openx.net",
+      "uniqueId": "-1812429978460352255.-4273789723488652725"
+   }
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=63) (session_id=0F03C40FD741D52DB22596E49E39174E) 0F03C40FD741D52DB22596E49E39174E {
+}
+[1740708764.406][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=64) (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+}
+[1740708764.407][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "context": {
+      "auxData": {
+         "frameId": "94CA6C45C6A5D1149AC703BEBE8A34C6",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://ads.pubmatic.com",
+      "uniqueId": "-6074940331361706088.-5264519013952023519"
+   }
+}
+[1740708764.407][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=64) (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+}
+[1740708764.407][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=65) (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+}
+[1740708764.407][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+   "context": {
+      "auxData": {
+         "frameId": "13FA9E38C5604B6EAE3A753E93992D69",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://ssum-sec.casalemedia.com",
+      "uniqueId": "6979285919274014415.-1367883311679062625"
+   }
+}
+[1740708764.407][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=65) (session_id=300E273360E66C511E0B1D940F962706) 300E273360E66C511E0B1D940F962706 {
+}
+[1740708764.407][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=66) (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+}
+[1740708764.407][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+   "context": {
+      "auxData": {
+         "frameId": "BD8EFD303F62FB7DBE94209DEEF80BD4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://5290727.fls.doubleclick.net",
+      "uniqueId": "262057904566591527.-1454932663012443736"
+   }
+}
+[1740708764.407][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=66) (session_id=B787C8931530DF0BEAE0E29BDB2EB7D4) B787C8931530DF0BEAE0E29BDB2EB7D4 {
+}
+[1740708764.407][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=67) (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+}
+[1740708764.407][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+   "context": {
+      "auxData": {
+         "frameId": "019FAA1083CF111391DB0DCD5A567970",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://td.doubleclick.net",
+      "uniqueId": "-4333896479664989586.5355940253455988203"
+   }
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=67) (session_id=C15623814ECCDE49D171DC72207311F3) C15623814ECCDE49D171DC72207311F3 {
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=68) (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "context": {
+      "auxData": {
+         "frameId": "6BF9E946B27A1846527661C62C82B390",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://s.amazon-adsystem.com",
+      "uniqueId": "-7387267367287068531.8656328152892683323"
+   }
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "context": {
+      "auxData": {
+         "frameId": "D81CB142246A7B6BD7DFE079BE12E328",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://s.amazon-adsystem.com",
+      "uniqueId": "8655741899139853564.730494811798620221"
+   }
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "context": {
+      "auxData": {
+         "frameId": "2B9FD2D492CECE46494DD87FB713BF29",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://s.amazon-adsystem.com",
+      "uniqueId": "-2449616697236002616.-711868176316736980"
+   }
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "context": {
+      "auxData": {
+         "frameId": "01BCC8757438AC928F17F25FD30FBE02",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://s.amazon-adsystem.com",
+      "uniqueId": "1578305899069937089.-5407412941823018121"
+   }
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "context": {
+      "auxData": {
+         "frameId": "0829A1F8B0B89A73B85857F382B8B9C9",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://s.amazon-adsystem.com",
+      "uniqueId": "1514124335440836572.-3002499655168256569"
+   }
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=68) (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+}
+[1740708764.408][INFO]: Waiting for pending navigations...
+[1740708764.408][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=69) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=69) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=70) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "document",
+   "objectGroup": "65cf0560-a361-41c7-83b0-95a5b7e6cfbb"
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=70) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "868727329833311583.1.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1740708764.408][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=71) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "objectId": "868727329833311583.1.2"
+}
+[1740708764.409][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=71) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://www.nytimes.com/games/wordle/index.html",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://www.nytimes.com/games/wordle/index.html",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1740708764.409][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=72) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "objectGroup": "65cf0560-a361-41c7-83b0-95a5b7e6cfbb"
+}
+[1740708764.409][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=73) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "410687097939882602.-7943819259447678012"
+}
+[1740708764.409][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=72) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708764.409][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=73) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1740708764.409][INFO]: Done waiting for pending navigations. Status: ok
+[1740708764.409][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=74) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708764.409][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=74) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708764.409][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=75) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708764.410][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=75) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708764.410][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=76) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "410687097939882602.-7943819259447678012"
+}
+[1740708764.411][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=76) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[\"__bm_m\",\"aps:3030:sessionMarker/marker\",\"_cb\",\"geo-location\",\"iterate_hq\",\"_chartbeat2\",\"bt\",\"apstagCfg\",\"sub\",\"_cb_expires\",\"mktg\",\"nyt-wordle-darkmode\",\"__bm_s\",\"als_test_cl..."
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "868727329833311583.1.3",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1740708764.411][INFO]: Waiting for pending navigations...
+[1740708764.411][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=77) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708764.411][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=77) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708764.411][INFO]: Done waiting for pending navigations. Status: ok
+[1740708764.411][INFO]: [2b315ad5176ef49845d2bd688f61fb85] RESPONSE ExecuteScript [ "__bm_m", "aps:3030:sessionMarker/marker", "_cb", "geo-location", "iterate_hq", "_chartbeat2", "bt", "apstagCfg", "sub", "_cb_expires", "mktg", "nyt-wordle-darkmode", "__bm_s", "als_test_clientside", "_cb_svref", "_chartbeat2_expires", "pz-version", "apstagCxMEnabled", "aps:3030:deviceSignal/sua", "..." ]
+[1740708766.412][INFO]: [2b315ad5176ef49845d2bd688f61fb85] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return Object.keys(localStorage);"
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "timestamp": 26276.300136
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "94CA6C45C6A5D1149AC703BEBE8A34C6"
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "frameId": "01BCC8757438AC928F17F25FD30FBE02"
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "timestamp": 26276.301808
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=B27E56267A6457317EA0119F57F3B3F2) B27E56267A6457317EA0119F57F3B3F2 {
+   "frameId": "0829A1F8B0B89A73B85857F382B8B9C9"
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "B56DBFED3481116A2EE55A38667CAA1F",
+   "parentFrameId": "94CA6C45C6A5D1149AC703BEBE8A34C6",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 1200,
+         "functionName": "aC",
+         "lineNumber": 0,
+         "scriptId": "5",
+         "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D"
+      }, {
+         "columnNumber": 19749,
+         "functionName": "U.loadAsyncIframePixel",
+         "lineNumber": 0,
+         "scriptId": "5",
+         "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D"
+      }, {
+         "columnNumber": 547,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "9",
+         "url": "https://image6.pubmatic.com/AdServer/PugMaster?sec=1&async=1&kdntuid=1&rnd=50649967&p=156011&s=165626&a=0&ptask=ALL&np=0&fp=0&rp=1&mpc=0&spug=1&coppa=0&gdpr=0&gdpr_consent=&us_privacy=&gpp=&gpp_sid="
+      } ]
+   }
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "disposition": "currentTab",
+   "frameId": "B56DBFED3481116A2EE55A38667CAA1F",
+   "reason": "initialFrameNavigation",
+   "url": "https://s.amazon-adsystem.com/dcm?pid=3b882453-6770-4785-baf8-a598533c054a&id=334F6A78-1130-4BC1-94E1-11AA84CE98F8&redir=true&gdpr=0&gdpr_consent="
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "B56DBFED3481116A2EE55A38667CAA1F"
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "3917B48CFB63AD056C7164948C25109A",
+   "parentFrameId": "94CA6C45C6A5D1149AC703BEBE8A34C6",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 1200,
+         "functionName": "aC",
+         "lineNumber": 0,
+         "scriptId": "5",
+         "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D"
+      }, {
+         "columnNumber": 19749,
+         "functionName": "U.loadAsyncIframePixel",
+         "lineNumber": 0,
+         "scriptId": "5",
+         "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D"
+      }, {
+         "columnNumber": 727,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "9",
+         "url": "https://image6.pubmatic.com/AdServer/PugMaster?sec=1&async=1&kdntuid=1&rnd=50649967&p=156011&s=165626&a=0&ptask=ALL&np=0&fp=0&rp=1&mpc=0&spug=1&coppa=0&gdpr=0&gdpr_consent=&us_privacy=&gpp=&gpp_sid="
+      } ]
+   }
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "disposition": "currentTab",
+   "frameId": "3917B48CFB63AD056C7164948C25109A",
+   "reason": "initialFrameNavigation",
+   "url": "https://match.deepintent.com/usersync/141?gdpr=0&gdpr_consent="
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "3917B48CFB63AD056C7164948C25109A"
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "1B0E7EA914FFC23429D8ECCE1CBB15C2",
+   "parentFrameId": "94CA6C45C6A5D1149AC703BEBE8A34C6",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 1200,
+         "functionName": "aC",
+         "lineNumber": 0,
+         "scriptId": "5",
+         "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D"
+      }, {
+         "columnNumber": 19749,
+         "functionName": "U.loadAsyncIframePixel",
+         "lineNumber": 0,
+         "scriptId": "5",
+         "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D"
+      }, {
+         "columnNumber": 1057,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "9",
+         "url": "https://image6.pubmatic.com/AdServer/PugMaster?sec=1&async=1&kdntuid=1&rnd=50649967&p=156011&s=165626&a=0&ptask=ALL&np=0&fp=0&rp=1&mpc=0&spug=1&coppa=0&gdpr=0&gdpr_consent=&us_privacy=&gpp=&gpp_sid="
+      } ]
+   }
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "disposition": "currentTab",
+   "frameId": "1B0E7EA914FFC23429D8ECCE1CBB15C2",
+   "reason": "initialFrameNavigation",
+   "url": "https://ib.adnxs.com/getuid?https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTc4JnRsPTE1NzY4MDA=&piggybackCookie=$UID&gdpr=0&gdpr_consent="
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "1B0E7EA914FFC23429D8ECCE1CBB15C2"
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "2400DB54B63C3C7E3E28210ADBD4FCAA",
+   "parentFrameId": "94CA6C45C6A5D1149AC703BEBE8A34C6",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 1200,
+         "functionName": "aC",
+         "lineNumber": 0,
+         "scriptId": "5",
+         "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D"
+      }, {
+         "columnNumber": 18071,
+         "functionName": "ap",
+         "lineNumber": 0,
+         "scriptId": "5",
+         "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D"
+      }, {
+         "columnNumber": 19707,
+         "functionName": "U.PugMasterCallback",
+         "lineNumber": 0,
+         "scriptId": "5",
+         "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3D"
+      }, {
+         "columnNumber": 1509,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "9",
+         "url": "https://image6.pubmatic.com/AdServer/PugMaster?sec=1&async=1&kdntuid=1&rnd=50649967&p=156011&s=165626&a=0&ptask=ALL&np=0&fp=0&rp=1&mpc=0&spug=1&coppa=0&gdpr=0&gdpr_consent=&us_privacy=&gpp=&gpp_sid="
+      } ]
+   }
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "disposition": "currentTab",
+   "frameId": "2400DB54B63C3C7E3E28210ADBD4FCAA",
+   "reason": "initialFrameNavigation",
+   "url": "https://s.amazon-adsystem.com/ecm3?ex=pubmatic.com&id=334F6A78-1130-4BC1-94E1-11AA84CE98F8"
+}
+[1740708766.412][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "2400DB54B63C3C7E3E28210ADBD4FCAA"
+}
+[1740708766.412][INFO]: Waiting for pending navigations...
+[1740708766.412][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=78) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708766.413][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=78) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708766.413][INFO]: Done waiting for pending navigations. Status: ok
+[1740708766.413][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=79) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708766.413][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=79) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708766.413][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=80) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708766.413][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=80) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708766.414][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=81) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "410687097939882602.-7943819259447678012"
+}
+[1740708766.414][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=81) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[\"__bm_m\",\"aps:3030:sessionMarker/marker\",\"_cb\",\"geo-location\",\"iterate_hq\",\"_chartbeat2\",\"bt\",\"apstagCfg\",\"sub\",\"_cb_expires\",\"mktg\",\"nyt-wordle-darkmode\",\"accepted_terms_servi..."
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "868727329833311583.1.4",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1740708766.414][INFO]: Waiting for pending navigations...
+[1740708766.414][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=82) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708766.415][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=82) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708766.415][INFO]: Done waiting for pending navigations. Status: ok
+[1740708766.415][INFO]: [2b315ad5176ef49845d2bd688f61fb85] RESPONSE ExecuteScript [ "__bm_m", "aps:3030:sessionMarker/marker", "_cb", "geo-location", "iterate_hq", "_chartbeat2", "bt", "apstagCfg", "sub", "_cb_expires", "mktg", "nyt-wordle-darkmode", "accepted_terms_service", "__bm_s", "als_test_clientside", "_cb_svref", "_chartbeat2_expires", "pz-version", "apstagCxMEnabled", "..." ]
+[1740708768.416][INFO]: [2b315ad5176ef49845d2bd688f61fb85] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return Object.keys(localStorage);"
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "sessionId": "E11EB77124C54F692198098F885E0D16",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "B56DBFED3481116A2EE55A38667CAA1F",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Command: Page.enable (id=83) (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=84) (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=85) (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=86) (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "B56DBFED3481116A2EE55A38667CAA1F",
+      "title": "https://s.amazon-adsystem.com/dcm?pid=3b882453-6770-4785-baf8-a598533c054a&id=334F6A78-1130-4BC1-94E1-11AA84CE98F8&redir=true&gdpr=0&gdpr_consent=",
+      "type": "iframe",
+      "url": "https://s.amazon-adsystem.com/dcm?pid=3b882453-6770-4785-baf8-a598533c054a&id=334F6A78-1130-4BC1-94E1-11AA84CE98F8&redir=true&gdpr=0&gdpr_consent="
+   }
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "B56DBFED3481116A2EE55A38667CAA1F",
+   "reason": "swap"
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "sessionId": "AC5DB3DA9DBFB5B20F99C369195D6C82",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "2400DB54B63C3C7E3E28210ADBD4FCAA",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Command: Page.enable (id=87) (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=88) (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708768.416][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=89) (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=90) (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "2400DB54B63C3C7E3E28210ADBD4FCAA",
+      "title": "https://s.amazon-adsystem.com/ecm3?ex=pubmatic.com&id=334F6A78-1130-4BC1-94E1-11AA84CE98F8",
+      "type": "iframe",
+      "url": "https://s.amazon-adsystem.com/ecm3?ex=pubmatic.com&id=334F6A78-1130-4BC1-94E1-11AA84CE98F8"
+   }
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "2400DB54B63C3C7E3E28210ADBD4FCAA",
+   "reason": "swap"
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "sessionId": "A84B297F1F3C869102F789541482D712",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "3917B48CFB63AD056C7164948C25109A",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Command: Page.enable (id=91) (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=92) (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=93) (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=94) (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "18B66DE6AD6DB90E9EBFCEAFC743CC39",
+      "canAccessOpener": false,
+      "targetId": "3917B48CFB63AD056C7164948C25109A",
+      "title": "https://match.deepintent.com/usersync/141?gdpr=0&gdpr_consent=",
+      "type": "iframe",
+      "url": "https://match.deepintent.com/usersync/141?gdpr=0&gdpr_consent="
+   }
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "3917B48CFB63AD056C7164948C25109A",
+   "reason": "swap"
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "frameId": "1B0E7EA914FFC23429D8ECCE1CBB15C2"
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=7093A28E8ED20FB47E46A4AE685C21CF) 7093A28E8ED20FB47E46A4AE685C21CF {
+   "context": {
+      "auxData": {
+         "frameId": "1B0E7EA914FFC23429D8ECCE1CBB15C2",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://ads.pubmatic.com",
+      "uniqueId": "4679076885320885040.-6823489346188686577"
+   }
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Page.enable (id=83) (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=84) (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+   "identifier": "1"
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=85) (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=86) (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Page.enable (id=87) (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=88) (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+   "identifier": "1"
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=89) (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=90) (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Page.enable (id=91) (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=92) (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+   "identifier": "1"
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=93) (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=94) (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+}
+[1740708768.417][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=95) (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+}
+[1740708768.418][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+   "context": {
+      "auxData": {
+         "frameId": "3917B48CFB63AD056C7164948C25109A",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://match.deepintent.com",
+      "uniqueId": "4119602982140561505.4476067043634063179"
+   }
+}
+[1740708768.418][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=95) (session_id=A84B297F1F3C869102F789541482D712) A84B297F1F3C869102F789541482D712 {
+}
+[1740708768.418][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=96) (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+}
+[1740708768.418][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+   "context": {
+      "auxData": {
+         "frameId": "2400DB54B63C3C7E3E28210ADBD4FCAA",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 8,
+      "name": "",
+      "origin": "https://s.amazon-adsystem.com",
+      "uniqueId": "-7650550263272104120.-1639101945520469424"
+   }
+}
+[1740708768.418][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=96) (session_id=AC5DB3DA9DBFB5B20F99C369195D6C82) AC5DB3DA9DBFB5B20F99C369195D6C82 {
+}
+[1740708768.418][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=97) (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+}
+[1740708768.418][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+   "context": {
+      "auxData": {
+         "frameId": "B56DBFED3481116A2EE55A38667CAA1F",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 7,
+      "name": "",
+      "origin": "https://s.amazon-adsystem.com",
+      "uniqueId": "2142481550156851283.-3608123570640011032"
+   }
+}
+[1740708768.418][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=97) (session_id=E11EB77124C54F692198098F885E0D16) E11EB77124C54F692198098F885E0D16 {
+}
+[1740708768.418][INFO]: Waiting for pending navigations...
+[1740708768.418][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=98) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708768.418][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=98) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708768.418][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=99) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "document",
+   "objectGroup": "4db77277-d558-4212-b76d-e3e5c8d55ce8"
+}
+[1740708768.419][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=99) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "868727329833311583.1.5",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1740708768.419][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=100) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "objectId": "868727329833311583.1.5"
+}
+[1740708768.419][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=100) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://www.nytimes.com/games/wordle/index.html",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://www.nytimes.com/games/wordle/index.html",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1740708768.419][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=101) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "objectGroup": "4db77277-d558-4212-b76d-e3e5c8d55ce8"
+}
+[1740708768.419][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=102) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "410687097939882602.-7943819259447678012"
+}
+[1740708768.419][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=101) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708768.419][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=102) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1740708768.419][INFO]: Done waiting for pending navigations. Status: ok
+[1740708768.419][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=103) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708768.419][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=103) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708768.420][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=104) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708768.420][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=104) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708768.420][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=105) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "410687097939882602.-7943819259447678012"
+}
+[1740708768.421][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=105) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[\"__bm_m\",\"aps:3030:sessionMarker/marker\",\"_cb\",\"geo-location\",\"iterate_hq\",\"_chartbeat2\",\"bt\",\"apstagCfg\",\"sub\",\"_cb_expires\",\"mktg\",\"nyt-wordle-darkmode\",\"accepted_terms_servi..."
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "868727329833311583.1.6",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1740708768.421][INFO]: Waiting for pending navigations...
+[1740708768.421][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=106) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708768.421][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=106) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708768.421][INFO]: Done waiting for pending navigations. Status: ok
+[1740708768.421][INFO]: [2b315ad5176ef49845d2bd688f61fb85] RESPONSE ExecuteScript [ "__bm_m", "aps:3030:sessionMarker/marker", "_cb", "geo-location", "iterate_hq", "_chartbeat2", "bt", "apstagCfg", "sub", "_cb_expires", "mktg", "nyt-wordle-darkmode", "accepted_terms_service", "__bm_s", "als_test_clientside", "_cb_svref", "_chartbeat2_expires", "pz-version", "apstagCxMEnabled", "..." ]
+[1740708770.423][INFO]: [2b315ad5176ef49845d2bd688f61fb85] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return Object.keys(localStorage);"
+}
+[1740708770.423][INFO]: Waiting for pending navigations...
+[1740708770.423][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=107) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708770.424][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=107) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708770.424][INFO]: Done waiting for pending navigations. Status: ok
+[1740708770.424][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=108) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708770.424][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=108) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708770.424][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=109) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708770.424][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=109) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708770.425][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=110) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "410687097939882602.-7943819259447678012"
+}
+[1740708770.425][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=110) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[\"__bm_m\",\"aps:3030:sessionMarker/marker\",\"_cb\",\"geo-location\",\"iterate_hq\",\"_chartbeat2\",\"bt\",\"apstagCfg\",\"sub\",\"_cb_expires\",\"mktg\",\"nyt-wordle-darkmode\",\"accepted_terms_servi..."
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "868727329833311583.1.7",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1740708770.425][INFO]: Waiting for pending navigations...
+[1740708770.425][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=111) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708770.425][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=111) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708770.425][INFO]: Done waiting for pending navigations. Status: ok
+[1740708770.425][INFO]: [2b315ad5176ef49845d2bd688f61fb85] RESPONSE ExecuteScript [ "__bm_m", "aps:3030:sessionMarker/marker", "_cb", "geo-location", "iterate_hq", "_chartbeat2", "bt", "apstagCfg", "sub", "_cb_expires", "mktg", "nyt-wordle-darkmode", "accepted_terms_service", "__bm_s", "als_test_clientside", "_cb_svref", "_chartbeat2_expires", "pz-version", "apstagCxMEnabled", "..." ]
+[1740708772.427][INFO]: [2b315ad5176ef49845d2bd688f61fb85] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return Object.keys(localStorage);"
+}
+[1740708772.427][INFO]: Waiting for pending navigations...
+[1740708772.427][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=112) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708772.428][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=112) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708772.428][INFO]: Done waiting for pending navigations. Status: ok
+[1740708772.428][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=113) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708772.428][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=113) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708772.429][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=114) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+}
+[1740708772.429][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=114) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "C6E38641225E0E4A292D192BDE461B5F",
+            "loaderId": "A558071D6A2E5541F78E8E4CB85023C0",
+            "mimeType": "text/html",
+            "name": "__pb_locator__",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "7C3ED8A2A6434D9D4792B2BD3AA3C4C6",
+            "loaderId": "34FC9DF3971E3B78B7E4AC0BF3E2FF91",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "2F050E7FE4FC8B5F9524D718D35B64DA",
+            "loaderId": "7B7BFDF2792A65BEFC640B272FDBED43",
+            "mimeType": "text/html",
+            "name": "__launchpadLocator",
+            "parentId": "967F37347BE01AE829489019FDAC0850",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "nytimes.com",
+         "gatedAPIFeatures": [  ],
+         "id": "967F37347BE01AE829489019FDAC0850",
+         "loaderId": "DCA00E04CC5A707104342B6E1C96B6C8",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.nytimes.com",
+         "url": "https://www.nytimes.com/games/wordle/index.html"
+      }
+   }
+}
+[1740708772.429][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=115) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "410687097939882602.-7943819259447678012"
+}
+[1740708772.431][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=115) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[\"__bm_m\",\"aps:3030:sessionMarker/marker\",\"_cb\",\"geo-location\",\"iterate_hq\",\"_chartbeat2\",\"bt\",\"apstagCfg\",\"sub\",\"_cb_expires\",\"mktg\",\"nyt-wordle-darkmode\",\"accepted_terms_servi..."
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "868727329833311583.1.8",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1740708772.431][INFO]: Waiting for pending navigations...
+[1740708772.431][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=116) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "expression": "1"
+}
+[1740708772.431][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=116) (session_id=6D218FCDDE07C50EA74C78B1F6B7DA7A) 967F37347BE01AE829489019FDAC0850 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1740708772.431][INFO]: Done waiting for pending navigations. Status: ok
+[1740708772.431][INFO]: [2b315ad5176ef49845d2bd688f61fb85] RESPONSE ExecuteScript [ "__bm_m", "aps:3030:sessionMarker/marker", "_cb", "geo-location", "iterate_hq", "_chartbeat2", "bt", "apstagCfg", "sub", "_cb_expires", "mktg", "nyt-wordle-darkmode", "accepted_terms_service", "__bm_s", "als_test_clientside", "_cb_svref", "_chartbeat2_expires", "pz-version", "apstagCxMEnabled", "..." ]
+[1740708774.088][INFO]: [2b315ad5176ef49845d2bd688f61fb85] COMMAND Quit {
+}
+[1740708774.120][INFO]: [2b315ad5176ef49845d2bd688f61fb85] RESPONSE Quit
+[1740708774.120][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1740708774.120][DEBUG]: Log type 'browser' lost 2 entries on destruction
