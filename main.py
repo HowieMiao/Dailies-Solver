@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, messagebox
 import importlib.util
 from pathlib import Path
 import sys
@@ -39,6 +39,10 @@ class GameSelector:
         self.selector.pack(pady=5)
         self.selector.bind("<<ComboboxSelected>>", self.load_game)
         
+        if self.games:
+            self.game_var.set(self.games[0])
+            self.load_game()
+                
         self.game_container = ttk.Frame(main_frame)
         self.game_container.pack(pady=20, fill=tk.BOTH, expand=True)
 
@@ -53,22 +57,29 @@ class GameSelector:
         game_name = self.game_var.get()
         solver_path = self.project_root / "games" / game_name / "solver.py"
         
-        spec = importlib.util.spec_from_file_location(
-            f"games.{game_name}.solver",
-            str(solver_path)
-        )
-        
-        if spec is None:
-            messagebox.showerror("Error", f"Could not load {game_name} solver")
-            return
+        try:
+            spec = importlib.util.spec_from_file_location(
+                f"games.{game_name}.solver",
+                str(solver_path)
+            )
             
-        game_module = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(game_module)
+            if spec is None:
+                raise ImportError(f"Could not load {game_name} solver")
+                
+            game_module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(game_module)
+            
+            # Dynamically determine the solver class name
+            class_name = f"{game_name.capitalize()}Solver"
+            solver_class = getattr(game_module, class_name)
+            
+            # Initialize game
+            self.current_game = solver_class()
+            game_frame = self.current_game.create_ui(self.game_container)
+            game_frame.pack(fill=tk.BOTH, expand=True)
         
-        # Initialize game
-        self.current_game = game_module.WordleSolver()
-        game_frame = self.current_game.create_ui(self.game_container)
-        game_frame.pack(fill=tk.BOTH, expand=True)
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to load {game_name}: {str(e)}")
 
     def run(self):
         self.root.mainloop()
