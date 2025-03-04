@@ -24,12 +24,14 @@ class GameSelector:
         return [d.name for d in games_dir.iterdir() if d.is_dir() and (d / "solver.py").exists()]
 
     def create_selector_ui(self):
-        main_frame = ttk.Frame(self.root, padding=20)
+        main_frame = ttk.Frame(self.root, padding=20,)
         main_frame.pack()
 
-        ttk.Label(main_frame, text="Select Game:").pack(pady=10)
+        ttk.Label(main_frame, text="Select Game:").pack(pady=10,padx=80)
         
-        self.game_var = tk.StringVar()
+        # Initialize with blank selection
+        self.game_var = tk.StringVar(value="")  # Set to empty string
+        
         self.selector = ttk.Combobox(
             main_frame, 
             textvariable=self.game_var,
@@ -39,10 +41,7 @@ class GameSelector:
         self.selector.pack(pady=5)
         self.selector.bind("<<ComboboxSelected>>", self.load_game)
         
-        if self.games:
-            self.game_var.set(self.games[0])
-            self.load_game()
-                
+        # Remove auto-loading of first game
         self.game_container = ttk.Frame(main_frame)
         self.game_container.pack(pady=20, fill=tk.BOTH, expand=True)
 

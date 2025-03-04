@@ -25,7 +25,7 @@ class WordleSolver(DailyGame):
         self.update_thread = threading.Thread(target=self.auto_refresh, daemon=True)
         self.update_thread.start()
 
-    def init_chrome(self):
+    def init_chrome(self): # open browser link
         chrome_options = Options()
         chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
         chrome_options.add_argument("--disable-metrics")
@@ -43,16 +43,17 @@ class WordleSolver(DailyGame):
         self.driver.get("https://www.nytimes.com/games/wordle/index.html")
 
     def create_ui(self, parent_frame):
-        main_frame = ttk.Frame(parent_frame)
+        main_frame = ttk.Frame(parent_frame) 
         main_frame.pack(fill=tk.BOTH, expand=True)
 
         # Control Panel
         control_frame = ttk.Frame(main_frame)
         control_frame.pack(pady=10)
         
-        ttk.Checkbutton(control_frame, text="Auto-Refresh", 
+        ttk.Checkbutton(control_frame, text="Auto-Refresh", #toggle auto refresh
                        variable=self.auto_update_var).pack(side=tk.LEFT, padx=5)
         
+        #single use buttons
         ttk.Button(control_frame, text="Force Refresh", 
                   command=self.force_refresh).pack(side=tk.LEFT, padx=5)
         ttk.Button(control_frame, text="Suggest Next", 
@@ -70,7 +71,7 @@ class WordleSolver(DailyGame):
 
         return main_frame
 
-    def reset_constraints(self):
+    def reset_constraints(self): #reset progress NEEDS UPDATE
         self.color_states.clear()
         self.manual_constraints = {
             'correct': {},

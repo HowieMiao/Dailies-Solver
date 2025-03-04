@@ -2,3 +2,4 @@
 chromedriver.log
 games/Wordle/__pycache__/solver.cpython-310.pyc
 games/LoLdle/__pycache__/solver.cpython-313.pyc
+games/wordle/__pycache__/solver.cpython-313.pyc
